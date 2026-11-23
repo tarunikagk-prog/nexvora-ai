@@ -1,1 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexvora AI</title>
+  <style>
+    :root {
+      --bg: #090d16;
+      --surface: #111827;
+      --text: #f9fafb;
+      --muted: #9ca3af;
+      --accent-1: #22d3ee;
+      --accent-2: #34d399;
+      --border: rgba(255, 255, 255, 0.08);
+    }
 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      font-size: 1.25rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: var(--text);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    .hero {
+      max-width: 680px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(34, 211, 238, 0.12);
+      color: var(--accent-1);
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin-bottom: 2rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    button, .btn {
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+      color: #041019;
+    }
+
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    #status-output {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--accent-2);
+      min-height: 1.4rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Nexvora AI</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <span class="badge">v0.1 • Initial Setup</span>
+      <h1>Intelligent workflows built for speed and clarity.</h1>
+      <p>
+        Nexvora AI is starting from a clean slate. Paste this into <code>index.html</code>,
+        customize the sections, and commit to <code>main</code> to get your base layout live.
+      </p>
+      <div class="actions">
+        <button class="btn-primary" id="demo-btn" type="button">Test Interaction</button>
+        <a class="btn-secondary" href="#features">Explore Structure</a>
+      </div>
+      <div id="status-output" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer id="features">
+    Nexvora AI • Built with HTML, CSS &amp; JavaScript
+  </footer>
+
+  <script>
+    const btn = document.getElementById("demo-btn");
+    const output = document.getElementById("status-output");
+
+    btn.addEventListener("click", () => {
+      output.textContent = "Starter script active — ready for your next feature.";
+    });
+  </script>
+</body>
+</html>
