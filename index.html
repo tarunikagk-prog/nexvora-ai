@@ -243,7 +243,7 @@
                   In-House Lightweight Tier
                 </span>
                 <span id="model-carbon-badge" class="px-2.5 py-1 rounded-full text-xs font-mono bg-[#13201b] text-lime-300 border border-[#243b32]">
-                  ⚡ 92% Lower Compute
+                  ⚡ 95% Lower Compute
                 </span>
               </div>
 
@@ -261,7 +261,7 @@
                 <div>
                   <span class="text-xs font-semibold text-emerald-400 uppercase tracking-wider block">Why this model?</span>
                   <p id="model-reason-text" class="text-sm text-slate-200 mt-0.5 leading-relaxed">
-                    Low reasoning depth and zero PII detected — routed to lightweight tier to save 95% compute cost while maintaining 98% summarization fidelity.
+                    Concise query on "our Q3 customer onboarding FAQ into 3 concise bullet points" — routed to Flash-Lite for fast, low-carbon custom synthesis.
                   </p>
                 </div>
               </div>
@@ -279,7 +279,7 @@
               </div>
               <div class="text-right md:text-center md:mt-2">
                 <div class="text-xs font-semibold text-slate-300">Routing Confidence</div>
-                <div id="routing-complexity-tag" class="text-[11px] font-mono text-emerald-400 mt-0.5">Complexity: 0.21 (Low)</div>
+                <div id="routing-complexity-tag" class="text-[11px] font-mono text-emerald-400 mt-0.5">Complexity: 0.43 (Low)</div>
               </div>
             </div>
           </div>
@@ -304,7 +304,7 @@
               <span id="metric-energy-badge" class="font-mono px-2 py-0.5 rounded bg-lime-500/15 text-lime-300 font-semibold">Low Carbon</span>
             </div>
             <div class="flex items-baseline gap-2.5">
-              <span id="metric-latency-val" class="text-2xl font-bold font-mono text-white">0.38s</span>
+              <span id="metric-latency-val" class="text-2xl font-bold font-mono text-white">0.36s</span>
               <span id="metric-energy-val" class="text-xs font-mono text-slate-400">• 0.04g CO₂e</span>
             </div>
             <p class="text-xs text-slate-400">Sub-second TTFT on energy-optimized inference cluster.</p>
@@ -318,7 +318,7 @@
             <div class="flex items-baseline gap-2">
               <span id="metric-guardrail-title" class="text-xl font-bold text-emerald-300">Safe &amp; Compliant</span>
             </div>
-            <p id="metric-guardrail-desc" class="text-xs text-slate-400">Zero PII, toxicity, or protected-attribute bias detected.</p>
+            <p id="metric-guardrail-desc" class="text-xs text-slate-400">Zero PII or bias detected for "our Q3 customer onboarding FAQ into 3 concise bullet points".</p>
           </div>
         </div>
 
@@ -344,9 +344,11 @@
             </div>
           </div>
 
-          <div id="generated-output-body" class="text-sm text-slate-200 leading-relaxed whitespace-pre-line font-normal bg-[#080e0c]/70 p-4 rounded-xl border border-[#172620]">• Instant Account Provisioning: New workspace admins receive automated SSO credentials and role templates within 5 minutes of contract sign-off.
-• Guided Data Migration: Self-service CSV and API connectors validate schema mappings automatically, cutting setup time by 60%.
-• 24/7 Priority Onboarding Support: Dedicated technical specialists host live office hours during the first 30 days to ensure smooth team adoption.</div>
+          <div id="generated-output-body" class="text-sm text-slate-200 leading-relaxed whitespace-pre-line font-normal bg-[#080e0c]/70 p-4 rounded-xl border border-[#172620]">Custom Summary for "Summarize our Q3 customer onboarding FAQ into 3 concise bullet points.":
+
+• Core Takeaway (our Q3 customer onboarding FAQ into 3 concise bullet points): Focuses directly on "our Q3 customer onboarding FAQ into 3 concise bullet points" based on your exact search phrasing rather than a fixed preset.
+• Practical Context: Keep scope clear and verify specific details or current figures when applying this to real decisions.
+• Next Step to Narrow Down: Add constraints (such as budget, region, timeline, or format) to get an even sharper answer.</div>
 
           <div class="pt-2 flex flex-wrap items-center justify-between gap-3 text-xs">
             <span class="text-slate-500">Need deeper telemetry for this decision?</span>
@@ -608,9 +610,9 @@
             <div class="relative w-28 h-20 flex items-end justify-center">
               <svg class="w-28 h-20" viewBox="0 0 120 75">
                 <path d="M 15 65 A 45 45 0 0 1 105 65" fill="none" stroke="#182923" stroke-width="10" stroke-linecap="round"/>
-                <path id="gauge-faithfulness" d="M 15 65 A 45 45 0 0 1 105 65" fill="none" stroke="#10b981" stroke-width="10" stroke-linecap="round" stroke-dasharray="141.4" stroke-dashoffset="8.5"/>
+                <path id="gauge-faithfulness" d="M 15 65 A 45 45 0 0 1 105 65" fill="none" stroke="#10b981" stroke-width="10" stroke-linecap="round" stroke-dasharray="141.4" stroke-dashoffset="7.1"/>
               </svg>
-              <span id="val-faithfulness" class="absolute bottom-1 text-xl font-bold font-mono text-white">0.94</span>
+              <span id="val-faithfulness" class="absolute bottom-1 text-xl font-bold font-mono text-white">0.95</span>
             </div>
             <span class="text-[11px] text-slate-400 mt-2">Threshold ≥ 0.85</span>
           </div>
@@ -632,7 +634,7 @@
             <div class="relative w-28 h-20 flex items-end justify-center">
               <svg class="w-28 h-20" viewBox="0 0 120 75">
                 <path d="M 15 65 A 45 45 0 0 1 105 65" fill="none" stroke="#182923" stroke-width="10" stroke-linecap="round"/>
-                <path id="gauge-toxicity" d="M 15 65 A 45 45 0 0 1 105 65" fill="none" stroke="#10b981" stroke-width="10" stroke-linecap="round" stroke-dasharray="141.4" stroke-dashoffset="139"/>
+                <path id="gauge-toxicity" d="M 15 65 A 45 45 0 0 1 105 65" fill="none" stroke="#10b981" stroke-width="10" stroke-linecap="round" stroke-dasharray="141.4" stroke-dashoffset="141.4"/>
               </svg>
               <span id="val-toxicity" class="absolute bottom-1 text-xl font-bold font-mono text-emerald-400">0.00</span>
             </div>
@@ -644,7 +646,7 @@
             <div class="relative w-28 h-20 flex items-end justify-center">
               <svg class="w-28 h-20" viewBox="0 0 120 75">
                 <path d="M 15 65 A 45 45 0 0 1 105 65" fill="none" stroke="#182923" stroke-width="10" stroke-linecap="round"/>
-                <path id="gauge-hallucination" d="M 15 65 A 45 45 0 0 1 105 65" fill="none" stroke="#10b981" stroke-width="10" stroke-linecap="round" stroke-dasharray="141.4" stroke-dashoffset="137"/>
+                <path id="gauge-hallucination" d="M 15 65 A 45 45 0 0 1 105 65" fill="none" stroke="#10b981" stroke-width="10" stroke-linecap="round" stroke-dasharray="141.4" stroke-dashoffset="140"/>
               </svg>
               <span id="val-hallucination" class="absolute bottom-1 text-xl font-bold font-mono text-emerald-400">0.01</span>
             </div>
@@ -783,10 +785,30 @@
       }, 1500);
     }
 
+    function extractTopic(prompt) {
+      const cleaned = prompt
+        .replace(/^(what is|what are|tell me about|explain|how to|compare|list|give me|find|best|top)\s+/i, '')
+        .replace(/[?.!]+$/g, '')
+        .trim();
+      return cleaned || prompt.trim();
+    }
+
     function classifyPrompt(prompt) {
-      const p = prompt.toLowerCase();
-      const isSensitive = /(zip code|age group|race|gender|loan approval|credit score|discriminat|prioritizing applicants|salary by gender|ssn|password)/i.test(p);
-      const isComplex = /(algorithm|distributed|rate limiter|time\/space|complexity|architect|python|sql|proof|synthesize|multi-step|optimize|code)/i.test(p) || prompt.length > 130;
+      const rawPrompt = prompt.trim();
+      const p = rawPrompt.toLowerCase();
+      const topic = extractTopic(rawPrompt);
+      const wordCount = rawPrompt.split(/\s+/).filter(Boolean).length;
+
+      const isSensitive = /(zip code|age group|race|gender|loan approval|credit score|discriminat|prioritizing applicants|salary by gender|ssn|password|bias)/i.test(p);
+      const isCodeOrSystem = /(algorithm|distributed|rate limiter|time\/space|complexity|architect|python|javascript|sql|api|database|code|debug|optimize)/i.test(p);
+      const isRecommendation = /\b(best|top|recommend|compare|vs|versus|dessert|food|place|tool|library|framework)\b/i.test(p);
+
+      let rawScore = 0.18 + Math.min(0.42, wordCount * 0.025);
+      if (isCodeOrSystem) rawScore += 0.24;
+      if (isRecommendation) rawScore += 0.08;
+      if (isSensitive) rawScore = Math.max(rawScore, 0.56);
+      const complexity = Math.min(0.96, +rawScore.toFixed(2));
+      const confidence = Math.max(86, Math.min(99, Math.round(98 - complexity * 9)));
 
       if (isSensitive) {
         return {
@@ -796,9 +818,9 @@
           tierKey: 'open',
           carbonBadge: '🛡️ Policy-Wrapped Inference',
           modelName: 'Llama-3.3-70B (Fairness-Guarded)',
-          confidence: 94,
-          complexityLabel: 'Complexity: 0.58 (Policy Sensitive)',
-          reason: 'Protected demographic attributes (zip codes & age groups) detected — routed to policy-sandboxed open model with automated fairness constraints.',
+          confidence,
+          complexityLabel: `Complexity: ${complexity.toFixed(2)} (Policy Sensitive)`,
+          reason: `Detected sensitive decision criteria in "${rawPrompt}" — routed to guarded tier with neutrality constraints applied to "${topic}".`,
           costActual: '$0.0011',
           costBaseline: 'vs $0.0048 Frontier',
           savedPct: 77,
@@ -808,26 +830,30 @@
           energyBadge: 'Balanced Tier',
           guardrailStatus: 'FLAGGED',
           guardrailTitle: 'Bias / PII Mitigated',
-          guardrailDesc: 'Demographic proxies stripped; fair-lending policy enforced.',
-          warningText: 'Protected demographic attributes (age & geographic zip code proxies) detected in decision criteria. Fair-lending neutrality constraints injected to ensure Equalized Odds compliance.',
-          output: `⚠️ Guardrail Notice: Applicant zip codes and age groups have been excluded from scoring weights to comply with Fair Lending & Equal Opportunity policies.\n\nObjective Eligibility Assessment Framework:\n1. Debt-to-Income (DTI) Ratio: Evaluate verified monthly debt obligations against gross income (target threshold ≤ 36%).\n2. Repayment History & Cash Flow: Assess 24-month on-time payment consistency and verified account liquidity.\n3. Neutral Risk Calibration: All applicants are scored identically using financial capacity metrics independent of geographic or demographic proxies.`,
-          tokens: 680,
-          qgScore: '8.8 / 10',
+          guardrailDesc: `Protected attributes filtered for query on "${topic}".`,
+          warningText: `Guardrail active for "${rawPrompt}": demographic or geographic proxies are excluded from weighting so evaluations stay fair and objective.`,
+          output:
+            `⚠️ Policy Guardrail Applied to: "${rawPrompt}"\n\n` +
+            `• Neutral Evaluation Criteria for ${topic}: Anchor decisions on transparent, measurable factors rather than protected or proxy attributes.\n` +
+            `• Bias & Parity Check: Removes demographic or location skew while preserving clear, actionable guidance for "${topic}".\n` +
+            `• Audit Recommendation: Document exact scoring rules and test outcomes across cohorts before applying them.`,
+          tokens: 420 + wordCount * 18,
+          qgScore: '8.9 / 10',
           qgStatus: 'MITIGATED',
-          faithfulness: 0.91,
-          relevancy: 0.95,
+          faithfulness: 0.92,
+          relevancy: 0.96,
           toxicity: 0.01,
           hallucination: 0.02,
           trace: [
-            { step: '1. Intent & Complexity Analysis', detail: 'Detected financial decisioning task (Complexity Score: 0.58/1.00).', badge: 'Moderate', ok: true },
-            { step: '2. PII & Protected Attribute Filter', detail: 'Flagged "zip codes" and "age groups" as protected proxy variables. Applied policy redaction.', badge: 'Mitigated', ok: false },
-            { step: '3. Model Selection Rule', detail: 'Selected Llama-3.3-70B with constitutional fairness adapter (77% cost reduction vs Frontier).', badge: 'Optimal', ok: true },
-            { step: '4. Output Groundedness Verification', detail: 'Confirmed response adheres to non-discriminatory underwriting criteria.', badge: 'Verified', ok: true }
+            { step: '1. Prompt Parsing & Topic Extraction', detail: `Extracted focus "${topic}" (${wordCount} words, complexity ${complexity.toFixed(2)}).`, badge: 'Parsed', ok: true },
+            { step: '2. Guardrail & Fairness Scan', detail: 'Flagged sensitive/demographic criteria and injected fairness constraints.', badge: 'Mitigated', ok: false },
+            { step: '3. Tier Selection', detail: 'Routed to Llama-3.3-70B (Fairness-Guarded) for policy compliance.', badge: 'Guarded', ok: true },
+            { step: '4. Quality Gate Verification', detail: `Verified response stays aligned with "${topic}" without bias amplification.`, badge: 'Verified', ok: true }
           ]
         };
       }
 
-      if (isComplex) {
+      if (isCodeOrSystem || complexity >= 0.68) {
         return {
           category: 'complex',
           modelId: 'gemini-pro',
@@ -835,9 +861,9 @@
           tierKey: 'pro',
           carbonBadge: '🧠 Deep Reasoning Allocated',
           modelName: 'Gemini 2.5 Pro',
-          confidence: 98,
-          complexityLabel: 'Complexity: 0.89 (High)',
-          reason: 'High algorithmic and architectural reasoning depth detected — escalated to Frontier tier to guarantee code correctness and complexity analysis.',
+          confidence,
+          complexityLabel: `Complexity: ${complexity.toFixed(2)} (High)`,
+          reason: `High technical depth (${wordCount} words, score ${complexity.toFixed(2)}) on "${topic}" — escalated to Gemini 2.5 Pro for structured reasoning.`,
           costActual: '$0.0042',
           costBaseline: 'vs $0.0120 o3 Deep',
           savedPct: 65,
@@ -847,10 +873,14 @@
           energyBadge: 'High Compute',
           guardrailStatus: 'PASS',
           guardrailTitle: 'Safe & Compliant',
-          guardrailDesc: 'Code safety, licensing, and security checks passed.',
+          guardrailDesc: `Technical & safety checks passed for "${topic}".`,
           warningText: '',
-          output: `import time, threading\nfrom collections import deque\n\nclass SlidingWindowRateLimiter:\n    def __init__(self, max_requests: int, window_seconds: float):\n        self.max_requests = max_requests\n        self.window = window_seconds\n        self.logs = {}  # client_id -> deque of timestamps\n        self.lock = threading.Lock()\n\n    def allow_request(self, client_id: str) -> bool:\n        now = time.monotonic()\n        with self.lock:\n            q = self.logs.setdefault(client_id, deque())\n            while q and now - q[0] >= self.window:\n                q.popleft()\n            if len(q) < self.max_requests:\n                q.append(now)\n                return True\n            return False\n\n• Time Complexity: Amortized O(1) per request (each timestamp is appended and evicted at most once).\n• Space Complexity: O(U × K) where U is active users and K is max_requests per window.`,
-          tokens: 1340,
+          output:
+            `Technical Breakdown for "${rawPrompt}":\n\n` +
+            `• Core Architecture (${topic}): Separate input validation, core processing/state logic, and error/retry boundaries so components fail independently.\n` +
+            `• Key Trade-offs: Balance throughput and latency against memory/storage overhead and operational complexity as load grows.\n` +
+            `• Verification & Edge Cases: Test boundary inputs, concurrency/race conditions, and fallback behavior under partial failures.`,
+          tokens: 780 + wordCount * 24,
           qgScore: '9.7 / 10',
           qgStatus: 'PASS',
           faithfulness: 0.96,
@@ -858,51 +888,95 @@
           toxicity: 0.00,
           hallucination: 0.01,
           trace: [
-            { step: '1. Intent & Complexity Analysis', detail: 'Detected multi-step code synthesis & asymptotic analysis (Complexity Score: 0.89/1.00).', badge: 'High Depth', ok: true },
-            { step: '2. PII & Bias Filter Check', detail: 'Zero sensitive attributes or unsafe execution patterns found.', badge: 'Clean', ok: true },
-            { step: '3. Model Selection Rule', detail: 'Escalated to Gemini 2.5 Pro (avoids lightweight logic errors while saving 65% vs o3).', badge: 'Escalated', ok: true },
-            { step: '4. Output Groundedness Verification', detail: 'Verified thread-safety lock semantics and Big-O bounds.', badge: 'Verified', ok: true }
+            { step: '1. Prompt Parsing & Topic Extraction', detail: `Identified technical topic "${topic}" (complexity ${complexity.toFixed(2)}).`, badge: 'High Depth', ok: true },
+            { step: '2. Pre-Flight Safety Check', detail: 'No PII or unsafe instructions detected.', badge: 'Clean', ok: true },
+            { step: '3. Tier Selection', detail: 'Escalated to Gemini 2.5 Pro for multi-step technical accuracy.', badge: 'Escalated', ok: true },
+            { step: '4. Quality Gate Verification', detail: `Confirmed architecture, trade-offs, and edge cases address "${topic}".`, badge: 'Verified', ok: true }
           ]
         };
       }
 
-      const isReturnQuery = p.includes('return policy');
+      if (isRecommendation) {
+        return {
+          category: 'recommendation',
+          modelId: 'llama-70b',
+          tierBadge: 'Balanced Mid-Compute Tier',
+          tierKey: 'open',
+          carbonBadge: '⚖️ Context-Tailored Routing',
+          modelName: 'Llama-3.3-70B',
+          confidence,
+          complexityLabel: `Complexity: ${complexity.toFixed(2)} (Moderate)`,
+          reason: `Comparative/curated search on "${topic}" — routed to Llama-3.3-70B to synthesize tailored options without over-spending on frontier compute.`,
+          costActual: '$0.0010',
+          costBaseline: 'vs $0.0046 Frontier',
+          savedPct: 78,
+          savedDollar: 0.0036,
+          latency: '0.62s',
+          energy: '0.08g CO₂e',
+          energyBadge: 'Balanced Tier',
+          guardrailStatus: 'PASS',
+          guardrailTitle: 'Safe & Compliant',
+          guardrailDesc: `Neutral, balanced options generated for "${topic}".`,
+          warningText: '',
+          output:
+            `Tailored Options for "${rawPrompt}":\n\n` +
+            `• Top Pick by Popularity & Craft (${topic}): Highlight well-known classics or leading choices prized for distinct flavor, usability, or reliability.\n` +
+            `• Regional / Niche Standouts: Look for local specialties or lesser-known alternatives that offer a different style or better value.\n` +
+            `• How to Choose for Your Taste: Pick rich, indulgent options when you want bold character, or lighter/simpler ones for everyday balance.`,
+          tokens: 390 + wordCount * 16,
+          qgScore: '9.5 / 10',
+          qgStatus: 'PASS',
+          faithfulness: 0.94,
+          relevancy: 0.97,
+          toxicity: 0.00,
+          hallucination: 0.01,
+          trace: [
+            { step: '1. Prompt Parsing & Topic Extraction', detail: `Detected recommendation search for "${topic}" (${wordCount} words).`, badge: 'Curated', ok: true },
+            { step: '2. Pre-Flight Safety Check', detail: 'Passed neutrality and safety checks.', badge: 'Clean', ok: true },
+            { step: '3. Tier Selection', detail: 'Selected Llama-3.3-70B for nuanced comparison at 78% lower cost.', badge: 'Optimal', ok: true },
+            { step: '4. Quality Gate Verification', detail: `Verified structured options directly answer "${topic}".`, badge: 'Verified', ok: true }
+          ]
+        };
+      }
+
       return {
-        category: 'simple',
+        category: 'custom-light',
         modelId: 'flash-lite',
         tierBadge: 'In-House Lightweight Tier',
         tierKey: 'lite',
         carbonBadge: '⚡ 95% Lower Compute',
         modelName: 'Gemini 2.5 Flash-Lite',
-        confidence: 96,
-        complexityLabel: 'Complexity: 0.21 (Low)',
-        reason: 'Low reasoning depth and zero PII detected — routed to lightweight tier to save 95% compute cost without sacrificing response accuracy.',
+        confidence,
+        complexityLabel: `Complexity: ${complexity.toFixed(2)} (Low)`,
+        reason: `Concise query (${wordCount} words, score ${complexity.toFixed(2)}) on "${topic}" — routed to Flash-Lite for fast, low-carbon custom synthesis.`,
         costActual: '$0.0002',
         costBaseline: 'vs $0.0045 Frontier',
         savedPct: 95,
         savedDollar: 0.0043,
-        latency: '0.38s',
+        latency: '0.36s',
         energy: '0.04g CO₂e',
         energyBadge: 'Low Carbon',
         guardrailStatus: 'PASS',
         guardrailTitle: 'Safe & Compliant',
-        guardrailDesc: 'Zero PII, toxicity, or protected-attribute bias detected.',
+        guardrailDesc: `Zero PII or bias detected for "${topic}".`,
         warningText: '',
-        output: isReturnQuery
-          ? `• Return Window: Online orders can be returned within 30 days of delivery for a full refund.\n• Support & Drop-off Hours: Digital return labels can be generated 24/7; live agent assistance is available Mon–Sat, 8:00 AM – 8:00 PM.\n• Instant Refund Processing: Refunds are initiated within 2 hours of carrier scan at any authorized drop-off point.`
-          : `• Instant Account Provisioning: New workspace admins receive automated SSO credentials and role templates within 5 minutes of sign-off.\n• Guided Data Migration: Self-service CSV and API connectors validate schema mappings automatically, cutting setup time by 60%.\n• 24/7 Priority Onboarding Support: Dedicated technical specialists host live office hours during the first 30 days to ensure smooth adoption.`,
-        tokens: 340,
+        output:
+          `Custom Summary for "${rawPrompt}":\n\n` +
+          `• Core Takeaway (${topic}): Focuses directly on "${topic}" based on your exact search phrasing rather than a fixed preset.\n` +
+          `• Practical Context: Keep scope clear and verify specific details or current figures when applying this to real decisions.\n` +
+          `• Next Step to Narrow Down: Add constraints (such as budget, region, timeline, or format) to get an even sharper answer.`,
+        tokens: 240 + wordCount * 14,
         qgScore: '9.6 / 10',
         qgStatus: 'PASS',
-        faithfulness: 0.94,
+        faithfulness: 0.95,
         relevancy: 0.98,
         toxicity: 0.00,
         hallucination: 0.01,
         trace: [
-          { step: '1. Intent & Complexity Analysis', detail: 'Classified as concise summarization / FAQ lookup (Complexity Score: 0.21/1.00).', badge: 'Low Depth', ok: true },
-          { step: '2. PII & Bias Filter Check', detail: 'Passed zero-PII and neutrality scan in 14ms.', badge: 'Clean', ok: true },
-          { step: '3. Model Selection Rule', detail: 'Routed to Gemini 2.5 Flash-Lite (95% cost & energy reduction vs Frontier).', badge: 'Optimal', ok: true },
-          { step: '4. Output Groundedness Verification', detail: 'Semantic alignment verified against workspace knowledge context.', badge: 'Verified', ok: true }
+          { step: '1. Prompt Parsing & Topic Extraction', detail: `Extracted topic "${topic}" from ${wordCount}-word prompt (complexity ${complexity.toFixed(2)}).`, badge: 'Custom', ok: true },
+          { step: '2. Pre-Flight Safety Check', detail: 'Passed zero-PII and neutrality scan.', badge: 'Clean', ok: true },
+          { step: '3. Tier Selection', detail: 'Routed to Gemini 2.5 Flash-Lite for low latency and 95% savings.', badge: 'Optimal', ok: true },
+          { step: '4. Quality Gate Verification', detail: `Confirmed response references "${topic}" directly.`, badge: 'Verified', ok: true }
         ]
       };
     }
